@@ -7,5 +7,7 @@ pipelineConfig:
           steps:
           - sh: terraform init
             name: terraform-init
+          - sh: terraform plan
+            name: terraform-plan
           - sh: terraform apply
             name: terraform-apply
