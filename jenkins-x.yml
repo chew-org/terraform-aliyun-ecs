@@ -1,0 +1,11 @@
+buildPack: terraform
+pipelineConfig:
+  pipelines:
+    release:
+      build:
+          replace: true
+          steps:
+          - sh: terraform init
+            name: terraform-init
+          - sh: terraform apply
+            name: terraform-apply
