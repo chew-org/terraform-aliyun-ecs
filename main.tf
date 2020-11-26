@@ -4,7 +4,7 @@ provider "alicloud" {
   region     = "${var.region}"
   version    = "~> 1.0"
 }
-#
+#comment
 data "alicloud_zones" "cloud_zones" {}
 
 data "alicloud_instance_types" "cores2mem4g" {
