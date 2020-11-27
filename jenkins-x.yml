@@ -1,19 +1,1 @@
 buildPack: terraform
-# pipelineConfig:
-#   pipelines:
-#     release:
-#       build:
-#           steps:
-#           - sh: terraform init
-#             name: terraform-init
-#           - sh: terraform apply -var-file="terraform.tfvars" -auto-approve
-#             name: terraform-apply
-#           # - sh: terraform destroy -var-file="terraform.tfvars" -auto-approve
-#           #   name: terraform-destroy
-
-# buildPacks:
-#   buildPackLibrary:
-#     gitRef: master
-#     gitURL: https://github.com/chew-org/jenkins-x-kubernetes.git
-#     name: terraform
-#
